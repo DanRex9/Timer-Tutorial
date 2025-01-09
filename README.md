@@ -31,4 +31,15 @@ Here we get an error saying that we cannot convert a tipe of a float into a [`St
 
 <img width="1190" alt="Screenshot 2025-01-09 at 16 17 43" src="https://github.com/user-attachments/assets/b8a4b16f-20c2-44ab-9460-fdf02a1177a2" />
 
-Back in unity you should be able to see the Timer Text float in your `TimeManager` script, from the hierarchy drag and drop your timer Text into the float, and now when you press play you can see your timer. But as you can see its not the best looking timer so we can fix this with a tiny bit more coding. 
+# Finishing
+
+Back in unity you should be able to see the Timer Text float in your `TimeManager` script, from the hierarchy drag and drop your timer Text into the float this is how it should look like, and now when you press play you can see your timer. But as you can see its not the best looking timer so we can fix this with a tiny bit more coding. 
+
+<img width="449" alt="Screenshot 2025-01-09 at 16 26 25" src="https://github.com/user-attachments/assets/db354e17-f390-4f27-b8a0-9a1c8dea53d6" />
+
+Back in our code you can see that next to our `ToString` we have brackets and what we can put in here is a [`Format Specifier` https://docs.unity3d.com/Packages/com.unity.logging@1.2/manual/format-specifiers.html] this provides instruction on how the value should be formated, in our case the amount of decimal places. to do this inside the brackets use quotation marks and then `F` and then we use a number to define how many decimals we want to have this is totaly up to your preference, for example if you wanted to have 3 decimals you do `"F3"` nad if you dont want any and just want whole numbers do `"F0"`. Now save and we are done you can head bacok to unity and you will have a simple working timer. Your final script should look something like this. 
+
+<img width="937" alt="Screenshot 2025-01-09 at 16 34 00" src="https://github.com/user-attachments/assets/ecd26b2d-6832-445b-a2f5-840fa9cb54e5" />
+
+
+I got the reference for this tutorial from https://www.youtube.com/watch?v=BMsiidirbYs 
